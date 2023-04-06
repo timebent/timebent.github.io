@@ -5,3 +5,4 @@
 layout: home
 ---
   {% include collecttags.html %}
+Test.
