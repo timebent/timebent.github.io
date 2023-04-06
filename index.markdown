@@ -4,7 +4,4 @@
 
 layout: home
 ---
-
-{% if site.tags != "" %}
   {% include collecttags.html %}
-{% endif %}
