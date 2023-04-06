@@ -12,7 +12,7 @@ Ryan was in the process of finalizing his [Pulsar](https://recluse-audio.com/ols
 
 The visual side of things works in three dimensional space, with the rendering of that space fed back into the three dimensional space on a video plane ... which is rendered and fed back etc. The movement of the objects in the three dimensional space is linked to sin and cos curves along with perlin noise. Audio sources are occastionally parametrically tied to the visual system. This is particularly evident in the audio taken from Ryan's Pulsar plugin. I use some real-tie controls of the system to perform the visuals in tandem with Ryan.
 
-In an interesting aside, Ryan and I worked with intention regarding the process for making this work. This intention largely dealt with setting up a productive situation for the creation of what we were doing. We made sure to divide the technical concerns away from the concerns of performance and improvisation.
+In an interesting aside, Ryan and I worked with intention regarding the process for making this work. This intention focused on setting up a situation in which we made sure to divide the technical concerns away from the concerns of performance and improvisation.
 
 <br>
 # Diffraction: A ballet for light (Four movements)
