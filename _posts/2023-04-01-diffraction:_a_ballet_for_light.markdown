@@ -4,6 +4,7 @@ title:  "Diffraction: a ballet for light"
 subtitle: Audiovisual work
 date:   2023-04-01 23:00 -0400
 categories: audiovisual
+tags: [music audiovisual]
 ---
 
 In the spring of 2021, we were still in pandemic mode although vaccines were rolling out. During that time, I worked with Ryan Devens on the creation of Diffration: a ballet for light. Ryan creates the audio and I create the video for this work.
