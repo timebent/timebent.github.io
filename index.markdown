@@ -5,12 +5,12 @@
 layout: home
 ---
 
-{% assign categories = site.categories | sort %}
-{% for category in site.categories %}
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
  <span class="site-tag">
-    <a href="/category/{{ category | first | slugify }}/"
-        style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ category | last | size }})
+    <a href="/tag/{{ tag | first | slugify }}/"
+        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
     </a>
 </span>
 {% endfor %}
