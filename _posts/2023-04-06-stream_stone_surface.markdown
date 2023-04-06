@@ -7,7 +7,7 @@ categories: music audiovisual
 tags: [music audiovisual]
 ---
 
-Stream Stone Surface was written in 2013. During this time I was beginning to formalize ideas about audiovisual composition in order to teach them in the graduate program. I was examining the work of Jordan Belson, who said the following:
+Stream Stone Surface was written in 2013. It is the first of a series of works exploring audiovisual composition. During this time I was beginning to formalize ideas about audiovisual composition in order to teach them in the graduate program. I was examining the work of Jordan Belson, who said the following:
 
 ".. movement is inherent in graphics, even in still graphics. Many of the means by which I have obtained motion on film, especially in my newer work, is a matter of extracting motion from designs that were not intended for that purpose, but just normally contained motion if one knew how to release it."
 
