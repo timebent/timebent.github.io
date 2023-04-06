@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Electrotactile Maps"
+title:  "Electrotactile maps"
 subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: music audiovisual
