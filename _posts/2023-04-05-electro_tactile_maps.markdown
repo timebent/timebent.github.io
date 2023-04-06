@@ -4,6 +4,7 @@ title:  "Electrotactile maps"
 subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: music audiovisual
+tags: [music, audiovisual]
 ---
 
 Electrotactile Maps is the 3rd in a series of audiovisual works. I gathered the inspiration for this piece when listening to a podcast. The podcast spoke about a technology that allowed profoundly blind people to "see" using sensory substitution. A pair of sunglasses has a camera attached. The camera sends its signal to an array of 144 electrodes that are placed on the tongue. Details about this can be found at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5523951/
