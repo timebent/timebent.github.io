@@ -5,4 +5,6 @@
 layout: home
 ---
 
-{% include collecttags.html %}
+{% if site.tags != "" %}
+  {% include collecttags.html %}
+{% endif %}
