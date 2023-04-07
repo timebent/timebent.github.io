@@ -3,8 +3,8 @@ layout: post
 title:  "Shift-13"
 subtitle: Matt Fallin, percussion
 date:   2023-04-03 16:56:52 -0400
-categories: music instrument_and_electronics
-tags: [instrument and electronics]
+categories: instrument_and_electronics
+tags: instrument and electronics
 ---
 I enjoy collaborating with friends and Shift-13 was the second collaboration with my friend Matt Fallin. Shift-13 began as an improvisational study that involved the arpeggiator of a keyboard in conjunction with a sampler loaded with percussive sounds.
 

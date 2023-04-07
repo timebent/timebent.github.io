@@ -3,8 +3,8 @@ layout: post
 title:  "Accretion flows"
 subtitle: Audiovisual work
 date:   2023-04-04 23:00 -0400
-categories: music audiovisual
-tags: [audiovisual]
+categories: audiovisual
+tags: audiovisual
 ---
 
 Accretion flows is the second in a series of works exploring audiovisual composition. I was interested in creating an underlying system to drive both visual and musical material in the piece. I imagined a data stream from which different modalities could grow, creating an ecosystem of experiential results that were grounded in the invisible.
