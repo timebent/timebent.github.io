@@ -3,8 +3,8 @@ layout: post
 title:  "Chasing Alse Young"
 subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
-categories: instrument and electronics
-tags: instrument and electronics
+categories: instrument-and-electronics
+tags: instrument-and-electronics
 ---
 
 Chasing Alse Young was written for Matt Fallin. It was performed in 2018 at the SEAMUS conference at the University of Oregon. It was also played at the 2018 Root Signals Festival.  
