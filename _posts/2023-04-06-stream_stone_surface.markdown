@@ -4,7 +4,7 @@ title:  "Stream stone surface"
 subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: music audiovisual
-tags: [music, audiovisual]
+tags: [audiovisual]
 ---
 
 Stream Stone Surface was written in 2013. It is the first of a series of works exploring audiovisual composition. During this time I was beginning to formalize ideas about audiovisual composition in order to teach them in the graduate program. I was examining the work of Jordan Belson, who said the following:

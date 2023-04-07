@@ -4,7 +4,7 @@ title:  "The changing light"
 subtitle: Adrianne Munden-Dixon, violin
 date:   2023-03-23 16:56:52 -0400
 categories: music instrument_and_electronics
-tags: [music, instrument and electronics]
+tags: [instrument and electronics]
 ---
 
 In the fall of 2021, Martin Gendelman contacted me about his plan to invite  violinist Adrianne Munden-Dixon for a performance at the Savannah Cultural Arts Center as part of the On the Verge concert series. Martin mentioned that Adrianne was interested in performing works by Martin, Peter Van Zandt Lane, and myself at the Savannah concert and a concert to be held at the University of Georgia where Peter was faculty. Martin and I both wrote new works for violin and electronics. 
