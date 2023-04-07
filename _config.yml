@@ -33,6 +33,9 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+minima:
+  skin: dark
+  
 show_excerpts: true
 
 # remote_theme: pages-themes/minimal@v0.2.0
