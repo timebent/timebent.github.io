@@ -19,7 +19,7 @@ On the guitar, there are some extended techniques employed. These include playin
 # Into The Rarefied Air: for electric guitar, drum machine, and computer. 
 *John Thompson: guitar* <br>
 
-<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1782501720/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://johnthompson3.bandcamp.com/track/into-the-rarefied-air">Into the rarefied air by John Thompson</a></iframe>
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=1782501720/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://johnthompson3.bandcamp.com/track/into-the-rarefied-air">Into the rarefied air by John Thompson</a></iframe>
 
 ---
 <br>
