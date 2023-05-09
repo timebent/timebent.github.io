@@ -19,22 +19,23 @@ Here are some quickly edited results of what this supplies.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iOmnIInZQYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+--
+
 2) A more chaotic example. I like the transitional moment here. Also, the visibility of the images was more clear in the beginning portion. Sometimes these visualizations tend to be subtle and dimly lit. This is made even worse with youtube compression.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hD5BkT498XA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+--
 
-In this example, I like when the images produce these unpredictable hieroglyphic type shapes in response to the sound:
+3) In this example, I like when the images produce these unpredictable hieroglyphic type shapes in response to the sound:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VSu3mg6-R0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Finally, a (slightly) unabridged version if for those that are especially interested:
+--
 
-# Stream Stone Surface
-*Audiovisual* <br>
+4) Finally, a (slightly) unabridged version if for those that are especially interested:
 
-<iframe src="https://player.vimeo.com/video/77009188?h=2984802bbb" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VSu3mg6-R0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 <br>
