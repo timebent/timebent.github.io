@@ -29,7 +29,7 @@ Here are some quickly edited results of what this supplies.
 
 3) In this example, I like when the images produce these unpredictable hieroglyphic type shapes in response to the sound:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VSu3mg6-R0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7IjLTyC4o88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 --
 
