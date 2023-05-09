@@ -4,7 +4,7 @@ title:  "Lissajous experiments (a la Putnam)"
 subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: audiovisual
-tags: audiovisual
+tags: audiovisual experiments max
 ---
 
 I was looking at Lance Putnam's "S Phase" work from the 2000s. https://w2.mat.ucsb.edu/l.putnam/s_phase/index.html In this work, Putnam is directly driving the visual material from the sonic material using 3D lissajous techniques. In short, this is where the amplitudes of audio signals are used to inform the positions of (x,y,z) vertices in a virtual space. 
