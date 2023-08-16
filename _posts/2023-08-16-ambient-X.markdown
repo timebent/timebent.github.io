@@ -6,18 +6,15 @@ date:   2023-04-23 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
 ---
-I enjoy collaborating with friends and Shift-13 was the second collaboration with my friend Matt Fallin. Shift-13 began as an improvisational study that involved the arpeggiator of a keyboard in conjunction with a sampler loaded with percussive sounds.
+This piece is my first dive into using Tidal Cycles in conjunction with SuperCollider and the "SuperDirt" quark to perform live coding. I decided to experiment with live coding in the Electronic Ensemble course I teach at Georgia Southern. We began by using Estuary and explored collaborative live coding using Troop. For my own work, I found the constraints of Estuary to be too limiting, so I decided to use Tidal Cycles with SuperCollider (and SuperDirt) directly. Being very familiar with SuperCollider, I was pretty comfortable understanding what was happening.
 
-The arpeggiator would take as input the notes I held down, but separated out the arpeggiation across 16 steps. Interestingly, this allowed me to turn on and off steps, to create isorhythms (of a sort), and finally to create an (unwieldy) improvisation using those techniques. I liked how the pulse was continuous but gained variation from the shifting across different instruments with different accents.
+The music syntax of Tidal Cycles and its focus on circular time is fascinating. I was quickly inspired to begin making music without necessarily having mastered the total of the Tidal Cycles options and certainly not being very familiar at all with the Haskell language that it uses. 
 
-I decided to work with this improvisation as raw material. I narrowed the scope of the instrumentation to 13 instruments, which needed to be small enough to fit into a suitcase. The structure of the work alternates between non-pulse material and pulse-based material. During the sections of non-pulse material, the instruments are processed live using spectral processing. This lends a ghostly melodic tracing of the content and allows the performer to perform with some flexibility and, in some cases, improvisation. The pulse-based sections are more unrelenting and require the performer to sync directly with pre-recorded electronic sounds, which extend the timbral possibilities of the instruments. 
+I thought Tidal Cycles would lend itself pretty well to creating a long form ambient work, which I would be able to program locally on the Channel Noise electronic music concerts that I put on. Somehow, I got distracted from that one idea and decided that it would be good to explore the introduction of a beat driven approach. Here I draw on my long-standing love of hip hop. I sampled from a few sources: Beastie Boys (Shake your rump), Clipse (What happened to that boy), Mac Miller (Self care). These samples along with some other 808 drums are used to create a second section that follows the ambient introduction. Hence the title Ambient X 808. 
 
-From the original improvisation, one specific instrument was retained ... the 808 kick drum which is presented regularly in the electronics. Unfortunately, I don't have a video of this performance, although it was performed in Kalamazoo, Michigan as part of the 2022 SEAMUS conference, and at the Channel Noise concert series at Georgia Southern University in that same year. Here is a studio recording of the piece. 
+Here is a take that I made while staying in New York City in the New Yorker hotel on a floor high above the ground. 
 
-# Shift-13: for percussion and electronics
-*Matt Fallin: Percussion* <br>
-
-<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2453764063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://johnthompson3.bandcamp.com/track/shift-13">Shift-13 by John Thompson</a></iframe>
+<iframe width="560" height="315" src="https://youtu.be/zGWQNOQu6WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 <br>
