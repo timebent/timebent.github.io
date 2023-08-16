@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "A"
+subtitle: live coding
+date:   2023-04-03 16:56:52 -0400
+categories: instrument-and-electronics
+tags: instrument-and-electronics
+---
+I enjoy collaborating with friends and Shift-13 was the second collaboration with my friend Matt Fallin. Shift-13 began as an improvisational study that involved the arpeggiator of a keyboard in conjunction with a sampler loaded with percussive sounds.
+
+The arpeggiator would take as input the notes I held down, but separated out the arpeggiation across 16 steps. Interestingly, this allowed me to turn on and off steps, to create isorhythms (of a sort), and finally to create an (unwieldy) improvisation using those techniques. I liked how the pulse was continuous but gained variation from the shifting across different instruments with different accents.
+
+I decided to work with this improvisation as raw material. I narrowed the scope of the instrumentation to 13 instruments, which needed to be small enough to fit into a suitcase. The structure of the work alternates between non-pulse material and pulse-based material. During the sections of non-pulse material, the instruments are processed live using spectral processing. This lends a ghostly melodic tracing of the content and allows the performer to perform with some flexibility and, in some cases, improvisation. The pulse-based sections are more unrelenting and require the performer to sync directly with pre-recorded electronic sounds, which extend the timbral possibilities of the instruments. 
+
+From the original improvisation, one specific instrument was retained ... the 808 kick drum which is presented regularly in the electronics. Unfortunately, I don't have a video of this performance, although it was performed in Kalamazoo, Michigan as part of the 2022 SEAMUS conference, and at the Channel Noise concert series at Georgia Southern University in that same year. Here is a studio recording of the piece. 
+
+# Shift-13: for percussion and electronics
+*Matt Fallin: Percussion* <br>
+
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2453764063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://johnthompson3.bandcamp.com/track/shift-13">Shift-13 by John Thompson</a></iframe>
+
+---
+<br>
