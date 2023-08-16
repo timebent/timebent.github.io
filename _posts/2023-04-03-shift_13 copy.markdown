@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Shift-13"
+title:  "Shift-13 Copy"
 subtitle: Matt Fallin, percussion
-date:   2023-04-03 16:56:52 -0400
+date:   2023-04-13 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
 ---
