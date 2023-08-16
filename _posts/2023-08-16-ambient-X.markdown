@@ -2,7 +2,7 @@
 layout: post
 title:  "A"
 subtitle: live coding
-date:   2023-04-03 16:56:52 -0400
+date:   2023-04-23 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
 ---
