@@ -13,6 +13,6 @@ The music syntax of Tidal Cycles and its focus on circular time is fascinating. 
 
 I thought Tidal Cycles would lend itself pretty well to creating a long form ambient work, which I would be able to program locally on the Channel Noise electronic music concerts that I put on. Somehow, I got distracted from that one idea and decided that it would be good to explore the introduction of a beat driven approach. Here I draw on my long-standing love of hip hop. I sampled from a few sources: Beastie Boys (Shake your rump), Clipse (What happened to that boy), Mac Miller (Self care). These samples along with some other 808 drums are used to create a second section that follows the ambient introduction. Hence the title Ambient X 808. 
 
-1) Here is a take that I made while staying in New York City in the New Yorker hotel on a floor high above the ground. 
+Here is a take that I made while staying in New York City in the New Yorker hotel on a floor high above the ground. 
 
 <iframe width="560" height="315" src="https://youtu.be/zGWQNOQu6WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
