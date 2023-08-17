@@ -13,6 +13,8 @@ Rotations is a piece for clarinet and 8-channel live electronics. In addition to
 
 Notating the multiphonics was (as always) an enlightening experience, and I glad to have Pablo there to share his intimate knowledge of the clarinet with me. 
 
+Rotations was performed at Channel Noise in the Spring of 2022 and also at Popayán, Colombia on September 1 of 2022.
+
 # Rotations
 *Pablo Tobar - clarinet* <br>
 
