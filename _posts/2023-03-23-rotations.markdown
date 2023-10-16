@@ -7,6 +7,8 @@ categories: instrument-and-electronics
 tags: instrument-and-electronics supercollider
 ---
 
+[comment]: <> ![Rotations score](/assets/images/RotationsImage.png){:height="177px" width="306px"} 
+
 Pablo Tobar was a graduate student of mine during the 2021-22 school year. He is a fantastic performer and we were both motivated to collaborate to create a work for him to perform. During the spring of 2022, there were a few works of mine that were being newly performed and polished / finished. Those included "Shift-13" and "The Changing Light". Putting the clarinet piece into the mix meant I had to work fairly quickly.
 
 Rotations is a piece for clarinet and 8-channel live electronics. In addition to the simple idea of moving the clarinet around the circle of speakers at various rhythmic intervals, there is also a rather complicated system for associating harmonic space with the physical space. The clarinet rotates through these spaces simultaneously. The harmonic space is realized by appropriately pitch-shifting the clarinet.
