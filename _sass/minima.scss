@@ -26,6 +26,62 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bio-image-container {
+  margin-bottom: 20px; /* Adds space between the image and the text */
+}
+
+.bio-image {
+  border-radius: 50%;   /* Makes the image circular */
+  width: 150px;         /* Set width of the image */
+  height: 150px;        /* Set height of the image */
+  object-fit: cover;    /* Ensures the image covers the area nicely */
+  display: block;
+  margin-left: auto;   /* Centers the image horizontally */
+  margin-right: auto;  /* Centers the image horizontally */
+}
+
+.bio-text {
+  max-width: 700px;   /* Optional: limits the width of the text for readability */
+  line-height: 1.6;   /* Adds line spacing for readability */
+}
+
+.bio-text p {
+  margin-bottom: 1em; /* Adds space between paragraphs */
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.category-container a {
+  text-align: center; /* Center the text under each image */
+  display: block;     /* Ensure <a> behaves as a block element */
+}
+
+.category-image {
+  width: 100%;
+  max-width: 250px;  /* Adjust this value for different sizes */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  .category-image {
+    max-width: 150px;  /* Smaller images on smaller screens */
+  }
+}
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {

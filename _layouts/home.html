@@ -9,7 +9,24 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  <div class="category-links">
+    <div class="category-container">
+      <a href="{{ site.baseurl }}/categories/audiovisual">
+        <img src="{{ site.baseurl }}/assets/images/Audiovisual.png" alt="Audiovisual" class="category-image" />
+        <p>Audiovisual</p>
+      </a>
+      <a href="{{ site.baseurl }}/categories/instrument-and-electronics">
+        <img src="{{ site.baseurl }}/assets/images/InstrElec.png" alt="Instrument and Electronics" class="category-image" />
+        <p>Instrument and Electronics</p>
+      </a>
+      <a href="{{ site.baseurl }}/categories/livecoding">
+        <img src="{{ site.baseurl }}/assets/images/Livecoding.png" alt="Live Coding" class="category-image" />
+        <p>Live Coding</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | : "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -39,9 +56,9 @@ layout: default
           </div>
       </li>
       {%- endfor -%}
-    </ul>
+    </ul> -->
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%} -->
 
 </div>
