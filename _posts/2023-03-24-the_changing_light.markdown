@@ -1,11 +1,20 @@
 ---
 layout: post
-title:  "The changing light"
+title:  "The changing light: violin and electronics"
 subtitle: Adrianne Munden-Dixon, violin
 date:   2023-03-23 16:56:52 -0400
 categories: instrument-and-electronics
-tags: instrument-and-electronics supercollider
+tags: instrument-and-electronics
 ---
+
+The Changing Light is a work for Violin and Electronics  written for violinist Adrianne Munden-Dixon.
+
+
+# The Changing Light
+*Adrianne Munden-Dixon - violin* <br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/epSeWPCfVHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br> 
 
 In the fall of 2021, Martin Gendelman contacted me about his plan to invite  violinist Adrianne Munden-Dixon for a performance at the Savannah Cultural Arts Center as part of the On the Verge concert series. Martin mentioned that Adrianne was interested in performing works by Martin, Peter Van Zandt Lane, and myself at the Savannah concert and a concert to be held at the University of Georgia where Peter was faculty. Martin and I both wrote new works for violin and electronics. 
 
@@ -20,11 +29,6 @@ The answer to the first question was The Changing Light by Lawrence Ferlinghetti
 
 The piece received its first performance in Athens, GA on March 24, 2022. The performance at the Savannah Cultural Arts Center took place March 26, 2022. The recording included here is from the 3rd performance of the piece which took place at Georgia Southern University as part of the Channel Noise concert series on April 7, 2022.
 
-# The Changing Light
-*Adrianne Munden-Dixon - violin* <br>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/epSeWPCfVHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br> 
 
 ---
 <br>
