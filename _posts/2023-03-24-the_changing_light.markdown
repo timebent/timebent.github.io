@@ -5,6 +5,7 @@ subtitle: Adrianne Munden-Dixon, violin
 date:   2023-03-23 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
+image: /assets/images/changinglight.png
 ---
 
 The Changing Light is a work for Violin and Electronics  written for violinist Adrianne Munden-Dixon.

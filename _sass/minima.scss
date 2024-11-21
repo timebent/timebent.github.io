@@ -26,6 +26,20 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+// post image formatting
+.post-image {
+  width: 10%;          /* Make the image responsive */
+  height: auto;         /* Maintain aspect ratio */
+  max-width: 300px;     /* Optional: limit the maximum width of the images */
+  margin-bottom: 15px;  /* Adds space below the image */
+  border-radius: 8px;   /* Optional: makes the image corners rounded */
+}
+
+.post-image-text {
+  display: flex;
+  align-items: center
+}
+
 /* Bio container */
 .bio {
   text-align: left;  /* Center content */

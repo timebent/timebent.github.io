@@ -5,6 +5,7 @@ subtitle: live coding
 date:   2023-01-23 16:56:52 -0400
 categories: live_coding
 tags: live_coding
+image: /assets/images/Livecoding.png
 ---
 Ambient-X-808 is a piece that is performed through live coding 
 

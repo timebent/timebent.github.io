@@ -5,6 +5,7 @@ subtitle: John Thompson, guitar
 date:   2023-04-07 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
+image: /assets/images/intotherarefied.png
 ---
 Into The Rarefied Air marked a return to instrument and electronics after a few years of fixed audiovisual work. 
 

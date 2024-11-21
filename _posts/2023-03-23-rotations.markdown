@@ -5,6 +5,7 @@ subtitle: Pablo Tobar, clarinet
 date:   2023-03-22 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
+image: /assets/images/rotations.png
 ---
 
 Rotations is a piece for clarinet and 8-channel live electronics. 

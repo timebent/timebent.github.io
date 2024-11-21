@@ -5,6 +5,7 @@ subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
+image: /assets/images/chasing.png
 ---
 
 Chasing Alse Young was written for percussionist, Matt Fallin.

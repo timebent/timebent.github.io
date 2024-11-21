@@ -5,6 +5,7 @@ subtitle: Matt Fallin, percussion
 date:   2023-04-03 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
+image: /assets/images/shift-13.png
 ---
 I enjoy collaborating with friends and Shift-13 was the second collaboration with my friend and percussionist, Matt Fallin. 
 

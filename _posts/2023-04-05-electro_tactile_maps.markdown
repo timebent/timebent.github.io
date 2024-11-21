@@ -5,6 +5,7 @@ subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: audiovisual
 tags: audiovisual
+image: /assets/images/electrotactile.png
 ---
 
 Electrotactile Maps is the 3rd in a series of audiovisual works. 

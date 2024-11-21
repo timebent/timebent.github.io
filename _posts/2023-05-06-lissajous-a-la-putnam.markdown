@@ -5,6 +5,7 @@ subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: audiovisual
 tags: audiovisual
+image: /assets/images/Audiovisual.png
 ---
 
 Intertwine is an audiovisual work that explores tight coupling of audio and visual elements. It is performed using a combination of elements including drum machine and direct control of the audiovisual system. Intertwined is rooted in the works of John and James Whitney, Norman McLaren, Lance Putnam, and Len Lye.

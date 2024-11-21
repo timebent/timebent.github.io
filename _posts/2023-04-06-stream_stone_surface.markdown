@@ -5,6 +5,7 @@ subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: audiovisual
 tags: audiovisual
+image: /assets/images/streamstone.png
 ---
 
 Stream Stone Surface was written in 2013. It is the first of a series of works exploring audiovisual composition. 

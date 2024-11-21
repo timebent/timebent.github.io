@@ -5,6 +5,7 @@ subtitle: Audiovisual work
 date:   2023-04-01 23:00 -0400
 categories: audiovisual
 tags: audiovisual
+image: /assets/images/diffraction.png
 ---
 
 Diffraction: a ballet for light is a collaborative audiovisual work in four movements.

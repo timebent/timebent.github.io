@@ -5,6 +5,7 @@ subtitle: Audiovisual work
 date:   2023-04-04 23:00 -0400
 categories: audiovisual
 tags: audiovisual
+image: /assets/images/accretion.png
 ---
 
 Accretion flows is the second in a series of works exploring audiovisual composition. 
