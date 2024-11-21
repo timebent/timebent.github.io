@@ -26,34 +26,89 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+/* Bio container */
 .bio {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  text-align: left;  /* Center content */
+  margin-bottom: 30px;  /* Space between bio and other page elements */
+  display: block;      /* Ensure it’s not influenced by flex or grid */
+  width: 100%;         /* Ensure the container takes full width of its parent */
+  max-width: 700px;    /* Optional: add a maximum width for the container */
+  margin: 0 auto;      /* Centers the container horizontally */
 }
 
 .bio-image-container {
   margin-bottom: 20px; /* Adds space between the image and the text */
 }
-
+/* Image styles */
 .bio-image {
-  border-radius: 50%;   /* Makes the image circular */
-  width: 150px;         /* Set width of the image */
-  height: 150px;        /* Set height of the image */
-  object-fit: cover;    /* Ensures the image covers the area nicely */
-  display: block;
-  margin-left: auto;   /* Centers the image horizontally */
-  margin-right: auto;  /* Centers the image horizontally */
+  width: 120px;        /* Default image size */
+  height: 120px;       /* Default image size */
+  border-radius: 50%;  /* Circular image */
+  object-fit: cover;   /* Ensure the image fits within the circle without distortion */
+  display: block;      /* Ensures the image is a block element and centered */
+  // margin: 0 auto 20px; /* Centers the image and adds space below */
 }
 
+/* Bio text styles */
 .bio-text {
-  max-width: 700px;   /* Optional: limits the width of the text for readability */
-  line-height: 1.6;   /* Adds line spacing for readability */
+  max-width: 700px;    /* Optional: limits the width of the text for readability */
+  margin: 0 auto;      /* Centers the text container */
+  line-height: 1.6;    /* Adds line spacing for readability */
 }
 
 .bio-text p {
-  margin-bottom: 1em; /* Adds space between paragraphs */
+  margin-bottom: 1.5em; /* Space between paragraphs */
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .bio-image {
+    width: 150px;        /* Smaller image size on mobile */
+    height: 150px;       /* Maintain proportionality */
+  }
+}
+
+/* Additional mobile styling if needed */
+@media (max-width: 480px) {
+  .bio-image {
+    width: 120px;        /* Even smaller image size on very small screens */
+    height: 120px;       /* Maintain proportionality */
+  }
+
+  .bio-text {
+    padding: 0 20px;     /* Add some padding to the sides for small screens */
+  }
+}
+
+
+// .bio {
+//   display: flex;
+//   align-items: center;
+//   gap: 20px;
+// }
+
+// .bio-image-container {
+//   margin-bottom: 20px; /* Adds space between the image and the text */
+// }
+
+// .bio-image {
+//   border-radius: 100%;   /* Makes the image circular */
+//   width: 150px;         /* Set width of the image */
+//   height: 150px;        /* Set height of the image */
+//   object-fit: cover;    /* Ensures the image covers the area nicely */
+//   display: inline;;
+//   margin-left: auto;   /* Centers the image horizontally */
+//   margin-right: auto;  /* Centers the image horizontally */
+// }
+
+// .bio-text {
+//   max-width: 700px;   /* Optional: limits the width of the text for readability */
+//   line-height: 1.6;   /* Adds line spacing for readability */
+// }
+
+// .bio-text p {
+//   margin-bottom: 1em; /* Adds space between paragraphs */
+// }
 
 .category-container {
   display: grid;
@@ -76,18 +131,20 @@ $on-laptop:        800px !default;
 }
 
 /* Responsive design for mobile devices */
-// @media (max-width: 600px) {
-//   .bio-image {
-//     width: 100px;  /* Smaller image on smaller screens */
-//     height: 100px; /* Smaller image on smaller screens */
-//   }
-//   .bio-text {
-//     max-width: 150px;
-//   }
-//   .category-image {
-//     max-width: 150px;  /* Smaller images on smaller screens */
-//   }
-// }
+@mixin media-query($device) {
+@media (max-width: $device) {
+  // .bio-image {
+  //   width: 100px;  /* Smaller image on smaller screens */
+  //   height: 100px; /* Smaller image on smaller screens */
+  // }
+  // .bio-text {
+  //   max-width: 150px;
+  // }
+  .category-image {
+    max-width: 150px;  /* Smaller images on smaller screens */
+  }
+}
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
