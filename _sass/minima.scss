@@ -63,16 +63,16 @@ $on-laptop:        800px !default;
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .bio-image {
-    width: 150px;        /* Smaller image size on mobile */
-    height: 150px;       /* Maintain proportionality */
+    width: 60px;        /* Smaller image size on mobile */
+    height: 60px;       /* Maintain proportionality */
   }
 }
 
 /* Additional mobile styling if needed */
 @media (max-width: 480px) {
   .bio-image {
-    width: 120px;        /* Even smaller image size on very small screens */
-    height: 120px;       /* Maintain proportionality */
+    width: 30px;        /* Even smaller image size on very small screens */
+    height: 30px;       /* Maintain proportionality */
   }
 
   .bio-text {
