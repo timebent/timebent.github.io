@@ -77,6 +77,10 @@ $on-laptop:        800px !default;
 
 /* Responsive design for mobile devices */
 @media (max-width: 600px) {
+  .bio-image {
+    width: 100px;  /* Smaller image on smaller screens */
+    height: 100px; /* Smaller image on smaller screens */
+  }
   .category-image {
     max-width: 150px;  /* Smaller images on smaller screens */
   }
