@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chasing Alse Young: drums and electronics"
+title:  "Chasing Alse Young (drums)"
 subtitle: Audiovisual work
 date:   2023-04-05 23:00 -0400
 categories: instrument-and-electronics

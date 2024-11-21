@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Into the rarefied air: guitar and electronics"
+title:  "Into the rarefied air (guitar)"
 subtitle: John Thompson, guitar
 date:   2023-04-07 16:56:52 -0400
 categories: instrument-and-electronics

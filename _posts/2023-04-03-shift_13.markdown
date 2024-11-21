@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shift-13: percussion and electronics"
+title:  "Shift-13 (percussion)"
 subtitle: Matt Fallin, percussion
 date:   2023-04-03 16:56:52 -0400
 categories: instrument-and-electronics
