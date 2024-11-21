@@ -81,6 +81,9 @@ $on-laptop:        800px !default;
     width: 100px;  /* Smaller image on smaller screens */
     height: 100px; /* Smaller image on smaller screens */
   }
+  .bio-text {
+    max-width: 150px;
+  }
   .category-image {
     max-width: 150px;  /* Smaller images on smaller screens */
   }
