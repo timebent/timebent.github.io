@@ -2,7 +2,7 @@
 layout: post
 title:  "Intertwine"
 subtitle: Audiovisual work
-date:   2023-04-05 23:00 -0400
+date:   2024-10-06 23:00 -0400
 categories: audiovisual
 tags: audiovisual
 image: /assets/images/Audiovisual.png
