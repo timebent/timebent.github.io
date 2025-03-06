@@ -37,6 +37,9 @@ plugins:
 
 show_excerpts: true
 
+kramdown:
+  parse_block_html: true
+
 # remote_theme: pages-themes/minimal@v0.2.0
 
 

@@ -21,8 +21,20 @@ I am happy to have the opportunity to share the first few years of my journey in
     - Cycles per minutes
     - Functions and Patterns Syntax 
 
-<iframe src="https://strudel.cc" width="800" height="600"></iframe>
+<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<strudel-repl>
+  <!--
+setcpm (110 / 4)
 
+let wordUp = sound("[bd hh] . [rim bd] . [hh -] . [rim -]")
+    // ._pianoroll()
+
+let bd = sound("bd:1 . - . - . -!3 bd:1")
+  .bank('Linn9000')
+  
+stack(wordUp, bd)
+-->
+</strudel-repl>
 
 
 
