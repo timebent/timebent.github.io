@@ -2,12 +2,12 @@
 layout: post
 title:  "MoxSonic Workshop"
 subtitle: live coding
-date:   2025-03-06 16:56:52 -0400
+date:   2025-03-05 16:56:52 -0400
 categories: live_coding
 tags: live_coding
 image: /assets/images/algorave.png
 ---
-*** test ***
+test
 
 <!-- I am happy to have the opportunity to share the first few years of my journey into live coding. The workshop will unfold as follows:
 
