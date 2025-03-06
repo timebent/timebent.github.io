@@ -9,7 +9,7 @@ image: /assets/images/algorave.png
 ---
 test
 
-<!-- I am happy to have the opportunity to share the first few years of my journey into live coding. The workshop will unfold as follows:
+I am happy to have the opportunity to share the first few years of my journey into live coding. The workshop will unfold as follows:
 
 1) Introduction to live coding. 
     - A general overview of live coding and its history
@@ -20,7 +20,7 @@ test
 2) Tempo and Rhythm in Strudel
     - An assumption of repeating cycles
     - Cycles per minutes
-    - Functions and Patterns Syntax -->
+    - Functions and Patterns Syntax 
 
  <!-- <div id="strudel-repl"></div>
 <script type="module">
