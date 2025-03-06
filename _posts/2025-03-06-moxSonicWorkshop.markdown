@@ -22,14 +22,14 @@ I am happy to have the opportunity to share the first few years of my journey in
     - Cycles per minutes
     - Functions and Patterns Syntax
 
- <div id="strudel-repl"></div>
+ <!-- <div id="strudel-repl"></div>
 <script type="module">
   import { StrudelREPL } from "https://strudel.tidalcycles.org/repl.js";
   window.addEventListener("DOMContentLoaded", () => {
     const repl = new StrudelREPL();
     document.getElementById("strudel-repl").appendChild(repl.container);
   });
-</script>
+</script> -->
 
 
 
