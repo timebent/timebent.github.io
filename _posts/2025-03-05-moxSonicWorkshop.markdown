@@ -31,23 +31,22 @@ I am happy to have the opportunity to share the first few years of my journey in
 setcpm (110 / 4)
 
 let wordUp = sound("[bd hh] . [rim bd] . [hh -] . [rim -]")
-    // ._pianoroll()
+    ._pianoroll({labels: 1})
 
 // or
 
 // let wordup = sound("[bd hh] [rim bd] [hh -] [rim -]")
-    // ._pianoroll()
+     ._pianoroll({labels: 1})
 
 // or
 
 // let wordup = sound("bd hh . rim bd . hh - . rim -")
-    // ._pianoroll()
+    ._pianoroll({labels: 1})
 
 
-let bd = sound("bd:1 . - . - . -!3 bd:1")
-  .bank('Linn9000')
+// let bd = sound("bd:1 . - . - . -!3 bd:1").bank('Linn9000')
 
-stack(wordUp, bd)
+stack(wordUp)
 -->
 </strudel-repl>
 
