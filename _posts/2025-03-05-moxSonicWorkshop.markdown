@@ -7,7 +7,6 @@ categories: live_coding
 tags: live_coding
 image: /assets/images/algorave.png
 ---
-test
 
 I am happy to have the opportunity to share the first few years of my journey into live coding. The workshop will unfold as follows:
 
@@ -22,22 +21,11 @@ I am happy to have the opportunity to share the first few years of my journey in
     - Cycles per minutes
     - Functions and Patterns Syntax 
 
-<<<<<<< HEAD
 <script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
 // A simple exambple of how a cycle can be divided in strudel
 // Here we divide the cycle into 4 parts using the "." notation
-=======
- <!-- <div id="strudel-repl"></div>
-<script type="module">
-  import { StrudelREPL } from "https://strudel.tidalcycles.org/repl.js";
-  window.addEventListener("DOMContentLoaded", () => {
-    const repl = new StrudelREPL();
-    document.getElementById("strudel-repl").appendChild(repl.container);
-  });
-</script> -->
->>>>>>> parent of 7982b90 (Update 2025-03-05-moxSonicWorkshop.markdown)
 
 
 setcpm (110 / 4)
@@ -63,7 +51,7 @@ stack(wordUp, bd)
 -->
 </strudel-repl>
 
-<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
 let hh = sound("[hh hh hh]@2 [hh*5]@2 [hh hh ~ ~]")
@@ -77,7 +65,7 @@ stack(hh, pulse, pulse2)
 -->
 </strudel-repl>
 
-<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
 setcpm (40/4)
