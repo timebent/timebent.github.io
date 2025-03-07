@@ -48,6 +48,7 @@ $on-laptop:        800px !default;
   width: 100%;         /* Ensure the container takes full width of its parent */
   max-width: 700px;    /* Optional: add a maximum width for the container */
   margin: 0 auto;      /* Centers the container horizontally */
+  background-color: transparent;
 }
 
 .bio-image-container {
