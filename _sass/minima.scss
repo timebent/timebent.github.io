@@ -41,20 +41,20 @@ $on-laptop:        800px !default;
 }
 
 /* Bio container */
-// .bio {
-//   text-align: left;  /* Center content */
-//   margin-bottom: 30px;  /* Space between bio and other page elements */
-//   display: block;      /* Ensure it’s not influenced by flex or grid */
-//   width: 100%;         /* Ensure the container takes full width of its parent */
-//   max-width: 700px;    /* Optional: add a maximum width for the container */
-//   margin: 0 auto;      /* Centers the container horizontally */
-// }
-
 .bio {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  text-align: left;  /* Center content */
+  margin-bottom: 30px;  /* Space between bio and other page elements */
+  display: block;      /* Ensure it’s not influenced by flex or grid */
+  width: 100%;         /* Ensure the container takes full width of its parent */
+  max-width: 700px;    /* Optional: add a maximum width for the container */
+  margin: 0 auto;      /* Centers the container horizontally */
 }
+
+// .bio {
+//   display: flex;
+//   align-items: center;
+//   gap: 20px;
+// }
 
 .bio-image-container {
   margin-bottom: 20px; /* Adds space between the image and the text */
