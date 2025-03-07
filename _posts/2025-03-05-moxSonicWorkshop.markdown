@@ -21,21 +21,60 @@ I am happy to have the opportunity to share the first few years of my journey in
     - Cycles per minutes
     - Functions and Patterns Syntax 
 
-<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
+// A simple exambple of how a cycle can be divided in strudel
+// Here we divide the cycle into 4 parts using the "." notation
+
+
 setcpm (110 / 4)
 
 let wordUp = sound("[bd hh] . [rim bd] . [hh -] . [rim -]")
     // ._pianoroll()
 
+// or
+
+// let wordup = sound("[bd hh] [rim bd] [hh -] [rim -]")
+    // ._pianoroll()
+
+// or
+
+// let wordup = sound("bd hh . rim bd . hh - . rim -")
+    // ._pianoroll()
+
+
 let bd = sound("bd:1 . - . - . -!3 bd:1")
   .bank('Linn9000')
-  
+
 stack(wordUp, bd)
 -->
 </strudel-repl>
 
+<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<strudel-repl>
+  <!--
+let hh = sound("[hh hh hh]@2 [hh*5]@2 [hh hh ~ ~]")
+let pulse = sound("cp . cp . cp . cp . cp")
+let pulse2 = sound("bd . bd . bd . bd").bank('Linn9000')
+// http://klangnewmusic.weebly.com/direct-sound/lets-talk-rhythm-part-2-nested-tuplets
+  
+// stack(wordUp, bd)
+stack(hh, pulse, pulse2)
 
+-->
+</strudel-repl>
+
+<script src="https://unpkg.com/@strudel/embed@latest"></script>
+<strudel-repl>
+  <!--
+setcpm (40/4)
+let hh = sound("[hh hh] [hh hh] [hh*5]@2 [hh hh] [hh hh]")
+// let hh = sound("[hh hh] [hh hh] [[hh*3]@2 hh hh hh]@2 [hh hh] [hh hh]")
+//let hh = sound("[hh hh] [hh hh] [hh*5]@2 [hh hh] [hh hh]")
+// let hh = sound("[hh hh] [hh hh] [[hh*3]@2 [hh*5]@2 hh]@2 [hh hh] [hh hh]")
+stack(hh, bd)
+-->
+</strudel-repl>
 
 <br>
