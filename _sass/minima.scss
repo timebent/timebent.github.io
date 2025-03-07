@@ -90,11 +90,11 @@ $on-laptop:        800px !default;
 }
 
 /* Additional mobile styling if needed */
-@media (max-width: 480px) {
-  .bio-image {
-    width: 120px;        /* Even smaller image size on very small screens */
-    height: 120px;       /* Maintain proportionality */
-  }
+// @media (max-width: 480px) {
+//   .bio-image {
+//     width: 120px;        /* Even smaller image size on very small screens */
+//     height: 120px;       /* Maintain proportionality */
+//   }
 
   .bio-text {
     padding: 0 20px;     /* Add some padding to the sides for small screens */
