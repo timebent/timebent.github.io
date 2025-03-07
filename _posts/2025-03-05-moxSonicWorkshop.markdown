@@ -8,18 +8,27 @@ tags: live_coding
 image: /assets/images/algorave.png
 ---
 
-I am happy to have the opportunity to share the first few years of my journey into live coding. The workshop will unfold as follows:
 
-1) Introduction to live coding. 
-    - A general overview of live coding and its history
-    - A brief discussion well-known options for live coding 
-    - A bit of how Tidalcycles and Strudel function
-    - Strudel as a starting point for live coding
+<ol>
+  <li>Introduction to live coding.
+    <ul>
+      <li>A general overview of live coding and its history</li>
+      <li>A brief discussion well-known options for live coding</li>
+      <li>A bit of how Tidalcycles and Strudel function</li>
+      <li>Strudel as a starting point for live coding</li>
+    </ul>
+  </li>
+<p> </p>
 
-2) Tempo and Rhythm in Strudel
-    - An assumption of repeating cycles
-    - Cycles per minutes
-    - Functions and Patterns Syntax 
+ <li> Tempo and Rhythm in Strudel
+    <ul>
+    <li> - An assumption of repeating cycles </li>
+    <li> - Cycles per minutes </li>
+    <li> - Functions and Patterns Syntax  </li>
+    </ul>
+  </li>
+</ol>
+
 
 <script src="/assets/embed.js"></script>
 <strudel-repl>
@@ -50,8 +59,13 @@ stack(wordUp)
 -->
 </strudel-repl>
 
-<img src="[http://www.somepic...](http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg)" alt="John Fielder credit" />
+Let's take a moment to see how we can explore more difficult rhythmic structures like nested tuplets. 
+The following notation is taken from John Fielder's blog post on nested tuplets.
+(http://klangnewmusic.weebly.com/direct-sound/lets-talk-rhythm-part-2-nested-tuplets)
 
+<img src="http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg" alt="John Fielder credit" />
+
+How can we explore this exercise using Strudel's rhythmic notation?
 
 <script src="/assets/embed.js"></script>
 <strudel-repl>
