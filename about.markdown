@@ -10,7 +10,7 @@ permalink: /about/
         <img src="{{ site.baseurl }}/assets/images/john-thompson-bio.jpg" alt="John Thompson" class="bio-image">
   </div>
 
-  <!-- 
+  <!--- 
   <div class="bio-text"> 
     John Thompson's music uses sound and image as a vehicle for expressing the beauty and complexity of the world. His compositions over the last 10 years have focused on audiovisual works and works for instrument and electronics.
     <br>
