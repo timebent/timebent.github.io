@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<!-- <div class="bio">
+ <div class="bio">
+ <!--
     <div class="bio-image-container">
         <img src="{{ site.baseurl }}/assets/images/john-thompson-bio.jpg" alt="John Thompson" class="bio-image">
     </div>
