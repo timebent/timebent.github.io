@@ -50,6 +50,21 @@ stack(wordUp)
 -->
 </strudel-repl>
 
+<img src="[http://www.somepic...](http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg)" alt="John Fielder credit" />
+
+
+<script src="/assets/embed.js"></script>
+<strudel-repl>
+  <!--
+setcpm (40/4)
+let hh = sound("[hh hh] [hh hh] [hh*5]@2 [hh hh] [hh hh]")
+let bd = sound("bd . bd . bd . bd . bd . bd")
+// let hh = sound("[hh hh] [hh hh] [[hh*3]@2 hh hh hh]@2 [hh hh] [hh hh]")
+// let hh = sound("[hh hh] [hh hh] [[hh*3]@2 [hh*5]@2 hh]@2 [hh hh] [hh hh]")
+stack(hh, bd)
+-->
+</strudel-repl>
+
 <script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
@@ -61,18 +76,6 @@ let pulse2 = sound("bd . bd . bd . bd").bank('Linn9000')
 // stack(wordUp, bd)
 stack(hh, pulse, pulse2)
 
--->
-</strudel-repl>
-
-<script src="/assets/embed.js"></script>
-<strudel-repl>
-  <!--
-setcpm (40/4)
-let hh = sound("[hh hh] [hh hh] [hh*5]@2 [hh hh] [hh hh]")
-// let hh = sound("[hh hh] [hh hh] [[hh*3]@2 hh hh hh]@2 [hh hh] [hh hh]")
-//let hh = sound("[hh hh] [hh hh] [hh*5]@2 [hh hh] [hh hh]")
-// let hh = sound("[hh hh] [hh hh] [[hh*3]@2 [hh*5]@2 hh]@2 [hh hh] [hh hh]")
-stack(hh, bd)
 -->
 </strudel-repl>
 
