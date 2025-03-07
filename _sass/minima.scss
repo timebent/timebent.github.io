@@ -70,10 +70,12 @@ $on-laptop:        800px !default;
   max-width: 700px;    /* Optional: limits the width of the text for readability */
   margin: 0 auto;      /* Centers the text container */
   line-height: 1.6;    /* Adds line spacing for readability */
+  background-color: transparent;
 }
 
 .bio-text p {
   margin-bottom: 1.5em; /* Space between paragraphs */
+  background-color: transparent;
 }
 
 /* Mobile responsiveness */
