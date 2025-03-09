@@ -98,6 +98,30 @@ $on-laptop:        800px !default;
   }
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: white; /* Ensure text is white for contrast */
+}
+
+th {
+  background-color: #222 !important; /* Dark gray for headers */
+  font-weight: bold;
+}
+
+tr, tr:nth-child(odd), tr:nth-child(even) {
+  background-color: black !important; /* Force all rows to be black */
+}
+
+td strong {
+  color: #ffcc00; /* Optional: Highlight strong text in yellow */
+}
 
 // .bio {
 //   display: flex;
