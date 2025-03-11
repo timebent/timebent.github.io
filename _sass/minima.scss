@@ -123,6 +123,33 @@ td strong {
   color: #ffcc00; /* Optional: Highlight strong text in yellow */
 }
 
+td code {
+  background: transparent; /* Removes the white background */
+  color: #ffcc66; /* Change this to a readable color for your theme */
+  font-family: monospace;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+code {
+  background: transparent !important; /* Removes the white background */
+  color: #ffcc66; /* Change this to a readable color for your theme */
+  font-family: monospace;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+summary {font-size: 24px}
+
+.crop {
+  overflow: hidden;
+}
+
+.crop img {
+  overflow: hidden;
+  margin-bottom: -100px;
+}
+
 // .bio {
 //   display: flex;
 //   align-items: center;
