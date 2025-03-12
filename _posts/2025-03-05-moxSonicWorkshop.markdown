@@ -21,7 +21,7 @@ Strudel Live Coding Environment<br>
       <li>Strudel as a starting point for live coding</li>
     </ul>> -->
 
-
+[Test Recursive]({% link 2025-03-05-moxSonicWorkshop.md %})
 
 <details>
   <summary>Live coding overview</summary>
@@ -204,6 +204,7 @@ sound("bd sd")
 -->
 </strudel-repl>
 
+
 <script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
@@ -233,8 +234,12 @@ stack(wordUp)
 -->
 </strudel-repl>
 
+
 </p>
+
+
 </details>
+
 
 <details>
 <summary> Tempo and Rhythm in Strudel - Thinking in Cycles (Intermediate) </summary>
@@ -335,6 +340,7 @@ The following notation is taken from John Fielder's blog post on nested tuplets.
 (http://klangnewmusic.weebly.com/direct-sound/lets-talk-rhythm-part-2-nested-tuplets) </p>
 
 <img src="http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg" alt="John Fielder credit" />
+<p> </p>
 
 <script src="/assets/embed.js"></script>
 
@@ -435,3 +441,4 @@ stack(
 
 
 <!-- <p> In computer music, Music-N languages gravitated toward a separate orchestra and score. The synthesis engine was separate from score-level event generation. Early analog electronic instruments make the distinction as well, providing sequenced control voltages to control parameters of audio rate modules, such as an oscillator. This paradigm was challenged by SuperCollider, a child of the Music-N lineage, by making no distinction between composition on the sample level and composition on longer time scales. </p> -->
+
