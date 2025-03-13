@@ -21,15 +21,15 @@ Strudel Live Coding Environment<br>
       <li>Strudel as a starting point for live coding</li>
     </ul>> -->
 
-[Test Recursive]({% link 2025-03-05-moxSonicWorkshop.md %})
-
-<details>
+<!-- <details>
   <summary>Live coding overview</summary>
 
 <p> </p>
 <p>What is live coding? (probably a lot of things qualify)</p>
-<!-- 
-<p>A brief history - Thor Magnussen with iXi Lang on SuperCollider, Charlie Roberts with Gibber on Browser, Tidalcycles with SuperCollider, Strudel with Browser. This workshop will focus on Strudel, which operates as a patterning sequencer for an audio engine. </p> -->
+
+**comment out
+<p>A brief history - Thor Magnussen with iXi Lang on SuperCollider, Charlie Roberts with Gibber on Browser, Tidalcycles with SuperCollider, Strudel with Browser. This workshop will focus on Strudel, which operates as a patterning sequencer for an audio engine. 
+***
 
 <p> It has been my experience, that early success provides the most inviting entryway into the creative coding of music. Certain live coding environments can reduce the overhead of learning a larger, less constrained environments. </p>
 
@@ -43,8 +43,10 @@ Strudel Live Coding Environment<br>
 
 <p> If the cyclical constraint is a bridge too far, then I would recommend live coding in SuperCollider, which take a less constrained approach with regard to musical models. The territory is considerably larger </p>
 
-</details>
+</details> 
+-->
 
+<!-- ***************************************************** -->
 <details>
 <summary>Well-known options for live coding </summary>
 
@@ -147,6 +149,17 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
       <td>❌ No visual feedback</td>
       <td>Good</td>
     </tr>
+
+      <tr>
+      <td><strong>Gibber</strong></td>
+      <td>✅ Yes (with gabber) </td>
+      <td>✅ (Web-based)</td>
+      <td>✅ (Beginner-friendly. Uses javascript. Not as streamlined as Strudel)</td>
+      <td>✅ (Clear documentation)</td>
+      <td>✅ Visual feedback with highlighting of code and more!</td>
+      <td>✅ Good+. The library of possibilities is not quite a full as other programs. </td>
+    </tr>
+
     <tr>
       <td><strong>Strudel</strong></td>
       <td>❌ No </td>
@@ -172,6 +185,7 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 </p>
 </details>
 
+<!-- ***************************************************** -->
 
  <!-- <li> Tempo and Rhythm in Strudel
     <ul>
@@ -185,13 +199,25 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 <summary> Tempo and Rhythm in Strudel - Thinking in Cycles (Basic) </summary>
 <p>
 
-<p> Strudel's syntax can be boiled down to two things: Functions and Patterns. Below a function named sound is used. The function expects to receive a pattern as its argument Patterns are expressed in quotation marks. </p>
+<p> Strudel's syntax can be boiled down to two things: Functions and Patterns. Below a function named sound is used. The function expects to receive a pattern as its argument Patterns are expressed in quotation marks or backticks (useful for writing patterns acroos multiple lines). </p>
 
-<blockquote> sound("bd") </blockquote>
+ <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm (140 / 4)
+sound("bd")
+-->
+</strudel-editor>
 
 <p> This indicates that the sound called bd should be called once a cycle, at the beginning of the cycle. Let's add another item to the pattern. </p>
 
-<blockquote> sound("bd sd") </blockquote>
+ <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm (140 / 4)
+sound("bd sd")
+-->
+</strudel-editor>
 
 <p>Now the cycle is split in two and the elements of the pattern bd and sd are played at those divisions. Let's experiment a bit with making rhythms with only this much information</p>
 
@@ -203,43 +229,120 @@ setcpm (140 / 4)
 sound("bd sd")
 -->
 </strudel-repl>
+ 
+<p> We eventually find that we need to group elements together to create subdivisions of the cycle. Also, we see the syntax for a rest (either - or ~)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Notation</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>[ ]</code></td>
+      <td>Divides the cycle or subdivisions when nested 
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+
+ <!--
+setcpm (140 / 4)
+sound("[ bd sd hh ] [hh hh]") 
+// The two enclosures [] and [] divide the cycle into 2. The elements within the enclosures then further divide that part of the cycles into 3 parts and 2 parts respectively. Compare: 
+// sound("[ bd sd hh ] [hh hh]") 
+// and 
+// sound("bd sd hh hh hh")
+// In the second of these, the cycle is divided evenly into 5 parts. 
+-->
+</strudel-editor>
+
+</td>
+    </tr>
+    <tr>
+      <td><code>.</code></td>
+      <td>Divides the cycle but cannot be nested 
+      <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+
+ <!--
+setcpm (140 / 4)
+// These are akin to the [ ] notation, but these cannot be nested.
+sound("bd sd . hh . hh . hh")
+// The . notation can be used in conjunction with the [] notation.
+// sound("[bd . sd [sd sd]] . [bd]")   
+-->
+</strudel-editor>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 <script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
 // A simple example of how a cycle can be divided in strudel
-// Here we divide the cycle into 4 parts using the "." notation
-
 
 setcpm (110 / 4)
 
-let wordUp = sound("[bd hh] . [rim bd] . [hh hh] . [rim -]")
+$wordUp: sound("[bd hh] [rim bd] [hh hh] [rim -]")
     ._pianoroll({labels: 1})
-
 // or
-
-// let wordup = sound("[bd hh] [rim bd] [hh hh] [rim -]")
+$wordUp2: sound("bd hh . rim bd . hh hh . rim ~")
      ._pianoroll({labels: 1})
-
 // or
-
-// let wordup = sound("bd hh . rim bd . hh hh . rim -")
+$wordUp3: sound("[bd hh] . [rim bd] . [hh hh] . [rim -]")
     ._pianoroll({labels: 1})
 
-
-// let bd = sound("bd:1 . - . - . -!3 bd:1").bank('Linn9000')
-
-stack(wordUp)
 -->
+
 </strudel-repl>
 
+<p> Let's take some time to try our hand at a few rhythmic exercises. </p>
 
-</p>
+<p> <img src="/assets/images/Simple.png" alt="Exercise 1" /> </p>
 
+<details> 
+<summary> Answer </summary> 
 
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm(60/4) 
+
+$1: s("~ cp ~ cp ~ ~ ~ ~") 
+$2: s("hh hh hh hh hh hh hh hh")
+-->
+</strudel-editor>
 </details>
 
+<p> </p>
+
+
+<p><img src="/assets/images/TwelveEightExercise.png" alt="Exercise 2" /> </p>
+
+<details> 
+<summary> Answer </summary> 
+
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm(60/4) 
+
+$1: s(` [ [cp cp cp] [cp cp cp] [cp] [cp] ] `) 
+$2: s("[hh hh hh hh hh hh hh hh hh hh hh hh]")
+-->
+</strudel-editor>
+
+</details>
+<p> </p>
+</p>
+</details>
+
+
+<!-- ***************************************************** -->
 
 <details>
 <summary> Tempo and Rhythm in Strudel - Thinking in Cycles (Intermediate) </summary>
@@ -253,39 +356,36 @@ stack(wordUp)
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><code>[ ]</code></td>
-      <td>Divides the cycle or subdivisions when nested 
-<script src="/assets/embed.js"></script>
-<strudel-repl>
+    
+
+  <tr>
+      <td><code>!</code></td>
+      <td>Replicate a pattern or part of a pattern
+     <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
 
  <!--
 setcpm (140 / 4)
-sound("[ bd sd hh ] [hh hh]") 
-// The two enclosures [] and [] divide the cycle into 2. The elements within the enclosures then further divide that part of the cycles into 3 parts and 2 parts respectively. Compare: 
-// sound("[ bd sd hh ] [hh hh]") 
-// and 
-// sound("bd sd hh hh hh")
-// In the second of these, the cycle is divided evenly into 5 parts. 
+sound("bd!4")
 -->
-</strudel-repl>
-
+</strudel-editor>
 </td>
     </tr>
-    <tr>
-      <td><code>.</code></td>
-      <td>Divides the cycle but cannot be nested 
-      <script src="/assets/embed.js"></script>
-<strudel-repl>
+
+
+  <tr>
+      <td><code>@</code></td>
+      <td>Elongates a pattern or part of a pattern
+     <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
 
  <!--
 setcpm (140 / 4)
-// These are akin to the [ ] notation, but these cannot be nested.
-sound("bd sd . hh . hh . hh")
-// The . notation can be used in conjunction with the [] notation.
-// sound("[bd . sd [sd sd]] . [bd]")   
+
+sound("bd sd@2 hh")
+// sound("[bd bd bd]@2 [bd]@2])
 -->
-</strudel-repl>
+</strudel-editor>
 
 </td>
     </tr>
@@ -293,8 +393,8 @@ sound("bd sd . hh . hh . hh")
       <td><code>&lt; &gt;</code></td>
       <td>Alternates cycles
       
-       <script src="/assets/embed.js"></script>
-<strudel-repl>
+       <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
 
  <!--
 setcpm (140 / 4)
@@ -302,15 +402,15 @@ sound("<bd sd>")
 // These can be nested. See how the nested element is addressed every other cycle:
 // sound("< bd < [sd sd] [sd sd sd] > >")  
 -->
-</strudel-repl>
+</strudel-editor>
       </td>
     </tr>
     <tr>
       <td><code>{ }</code></td>
       <td>Indicates polymeter
 
- <script src="/assets/embed.js"></script>
-<strudel-repl>
+  <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
 
  <!--
 setcpm (140 / 4)
@@ -320,31 +420,181 @@ sound(" { bd sd", "hh hh hh } ")
 // Polyrhythm
 // sound("bd sd", "hh hh hh")
 -->
-</strudel-repl>
+</strudel-editor>
       </td>
     </tr>
   </tbody>
 </table>
 
+
+<p> <img src="/assets/images/TripletSimple.png" alt="Exercise 3" /> </p>
+
+<details> 
+<summary> Answer </summary> 
+
+ <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm(60/4) 
+
+$1: s(`
+      [ [cp] [~ cp cp] [cp@2 cp] [] ]  
+  `) 
+
+$2: s("[hh!4]")
+-->
+</strudel-editor>
+
+</details>
+<p> </p>
+
+<p> <img src="/assets/images/SixteenthNoteRhythmExercise2.png" alt="Exercise 4" /> </p>
+
+<details> 
+<summary> Answer </summary>
+
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm(60/4) 
+
+$1: s(`<
+      [ [lt lt@2 lt] [lt lt@2 lt] [~ lt] [lt] ] 
+      [ [lt lt@2 lt] [~ lt@2 lt] [~ lt] [lt] ]
+  >`) 
+
+$2: s("<[hh!4] [hh!4]>")
+-->
+</strudel-editor>
+</details>
+
+<p> </p>
+<p><img src="/assets/images/SixteenthNoteRhythmExercise.png" alt="Exercise 3" /> </p>
+
+<details> 
+<summary> Answer </summary> 
+
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm(60/4) 
+
+$1: s(`<
+      [ [~!3 lt] [[lt lt] lt] [~ lt] [[lt lt] lt] ]  
+      [ lt lt lt lt@2 lt lt@2 lt@8 ]
+  >`) 
+
+$2: s("<[hh!4] [hh!4]>")
+-->
+</strudel-editor>
+
+</details>
+
+
 </p>
 </details>
 
+
+<!-- ***************************************************** -->
 
 <details>
 <summary> Tempo and Rhythm in Strudel - Thinking in Cycles (Advanced) </summary>
 <p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Notation</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td><code>*</code></td>
+    <td>Speed up a pattern or part of a pattern
+    <script src="https://unpkg.com/@strudel/repl@latest"></script>
+  <strudel-editor>
 
-<p> Let's explore more difficult rhythmic structures like nested tuplets. 
+ <!--
+setcpm (140 / 4)
+sound("[ bd sd bd sd]*8 [bd*4 sd bd sd]")
+-->
+  </strudel-editor>
+  </td>
+</tr>
+
+<tr>
+  <td><code>/</code></td>
+    <td>Slow down a pattern or part of a pattern
+    <script src="https://unpkg.com/@strudel/repl@latest"></script>
+  <strudel-editor>
+ <!--
+setcpm (140 / 4)
+sound("[ bd]/2 [sd]/3") // here the pattern is extended to 2X the cycle length
+-->
+  </strudel-editor>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<p> <strong> Euclidian Rhythms </strong> </p>
+<p> This link contains not only an explanation of how it works, but also examples of common euclydian patterns  http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf </p>
+<p> To put it briefly, the Euclidean rhythms take number of events to distribute across a number of pulses. Additionally, an offset parameter to say where in the pattern to begin doing this.</p>
+
+<p> 3 events across 8 pulses with an offset of 0 would result in the following: </p>
+<p> X - - X - - X - </p>
+
+<p> With an offset of 1, the pattern would look like this: </p>
+<p> - X - - X - - X </p>
+
+ <script src="https://unpkg.com/@strudel/repl@latest"></script>
+  <strudel-editor>
+  <!--
+// "Common West African bell v240624" @by Prince Lucija
+setcpm(134/4)
+stack(
+  s("cb:0(<4!7 <3 6>>, 12)").speed(0.5).decay(0.2)._spiral() , 
+  // different steps, 12 pulses. 
+  // The first 7 cycles it is 4 divs of 12
+  // * - - * - - * - - * - -
+  // The 8th cycle it is 3 divs of 12
+  // * - - - * - - - * - - -
+  // Then 7 more cycles of 4 dives of 12
+  // * - - * - - * - - * - -
+  // Then the 16th cycle is 6 divs of 12
+  // * - * - * - * - * - * - 
+    s("cb:0(<2!3 3>,12,3)").speed(1.8),
+  // The first 3 cycles it is 2 divisions of 12 (offset by 3)
+  // offset by 3 means starting on the 3rd of the 12 beats
+  // - - * - - - - * - - - -
+  // The 4th cycle it is 3 divisions of 12 (offset by 3)
+  // - - * - - - * - - - * - // fourth cycle
+   s("cb:3(2,3,1)*4").speed(3.0),
+  // The cycles are all the same. 2 divisions of 3 offset by 1
+  // The *4 means there are 4 repeats of this to form 12 beats
+  //  smae as s("[- cb:3 cb:3]*4")
+  // - * * - * * - * * - * *
+  s("rim(1,3,2)*4"),
+  // The cycles are all the same. 1 divisions of 3 offset by 2
+  // The *4 means there are 4 repeats of this to form 12 beats
+  // same as s("[- - rim]*4")
+  // s("cb:2(7,12,3)"),  // standard african bell pattern
+  // s("cb:0(3,12, 3)").speed(0.7)
+)
+  .bank("RolandTR707")
+-->
+  </strudel-editor>
+
+<p> <strong> Nested Tuplets </strong> </p>
 The following notation is taken from John Fielder's blog post on nested tuplets.
 (http://klangnewmusic.weebly.com/direct-sound/lets-talk-rhythm-part-2-nested-tuplets) </p>
 
 <img src="http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg" alt="John Fielder credit" />
 <p> </p>
 
-<script src="/assets/embed.js"></script>
-
-<strudel-repl>
+ <script src="https://unpkg.com/@strudel/repl@latest"></script>
+  <strudel-editor>
   <!--
 // How can we explore this exercise using Strudel's rhythmic notation?
 setcpm (40/4)
@@ -354,8 +604,14 @@ let bd = sound("bd . bd . bd . bd . bd . bd")
 // let hh = sound("[hh hh] [hh hh] [[hh*3]@2 [hh*5]@2 hh]@2 [hh hh] [hh hh]")
 stack(hh, bd)
 -->
-</strudel-repl>
+</strudel-editor>
 
+</details>
+<!-- ***************************************************** -->
+
+
+<details>
+<summary>Patterning notes and sample selections </summary>
 
 <p> Again from John Fielder's blog, this time with melody. This is much gnarlier in Strudel due to the shifting meter. </p>
 
@@ -387,58 +643,8 @@ stack(melody, tick)
 
 </strudel-repl>
 
-<p> Euclidean Rhythms <p>
-<p> This link contains not only an explanation of how it works, but also examples of common euclydian patterns  http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf </p>
-
-<p> To put it briefly, the Euclidean rhythms take number of events to distribute across a number of pulses. Additionally, an offset parameter to say where in the pattern to begin doing this.</p>
-
-<p> 3 events across 8 pulses with an offset of 0 would result in the following: </p>
-<p> X - - X - - X - </p>
-
-<p> With an offset of 1, the pattern would look like this: </p>
-<p> - X - - X - - X </p>
-
-<script src="/assets/embed.js"></script>
-<strudel-repl>
-  <!--
-// "Common West African bell v240624" @by Prince Lucija
-setcpm(134/4)
-stack(
-  s("cb:0(<4!7 <3 6>>, 12)").speed(0.5).decay(0.2)._spiral() , 
-  // different steps, 12 pulses. 
-  // The first 7 cycles it is 4 divs of 12
-  // * - - * - - * - - * - -
-  // The 8th cycle it is 3 divs of 12
-  // * - - - * - - - * - - -
-  // Then 7 more cycles of 4 dives of 12
-  // * - - * - - * - - * - -
-  // Then the 16th cycle is 6 divs of 12
-  // * - * - * - * - * - * - 
-  
-    s("cb:0(<2!3 3>,12,3)").speed(1.8),
-  // The first 3 cycles it is 2 divisions of 12 (offset by 3)
-  // offset by 3 means starting on the 3rd of the 12 beats
-  // - - * - - - - * - - - -
-  // The 4th cycle it is 3 divisions of 12 (offset by 3)
-  // - - * - - - * - - - * - // fourth cycle
-  
-   s("cb:3(2,3,1)*4").speed(3.0),
-  // The cycles are all the same. 2 divisions of 3 offset by 1
-  // The *4 means there are 4 repeats of this to form 12 beats
-  //  smae as s("[- cb:3 cb:3]*4")
-  // - * * - * * - * * - * *
-  s("rim(1,3,2)*4"),
-  // The cycles are all the same. 1 divisions of 3 offset by 2
-  // The *4 means there are 4 repeats of this to form 12 beats
-  // same as s("[- - rim]*4")
-  
-  // s("cb:2(7,12,3)"),  // standard african bell pattern
-  // s("cb:0(3,12, 3)").speed(0.7)
-)
-  .bank("RolandTR707")
--->
-  </strudel-repl>
-
+</details>
 
 <!-- <p> In computer music, Music-N languages gravitated toward a separate orchestra and score. The synthesis engine was separate from score-level event generation. Early analog electronic instruments make the distinction as well, providing sequenced control voltages to control parameters of audio rate modules, such as an oscillator. This paradigm was challenged by SuperCollider, a child of the Music-N lineage, by making no distinction between composition on the sample level and composition on longer time scales. </p> -->
+
 
