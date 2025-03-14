@@ -47,9 +47,12 @@ Strudel Live Coding Environment<br>
 -->
 
 <!-- ***************************************************** -->
+
+
 <details>
 <summary>Well-known options for live coding </summary>
 
+<!-- 
 <p>
 
 <p>An overview of the entire ecosystem of live coding environments is impossible here. Instead, I will focus on the set of environments that form the backbone of Strudel, branch from it, or are similar to it.  </p>
@@ -106,6 +109,7 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 
 <p> Strudel is developed by Felix Roos.  </p>
 
+--> 
 <p> Here is a chart which compares some basic elements </p>
 
 <table>
@@ -611,7 +615,90 @@ stack(hh, bd)
 
 
 <details>
-<summary>Patterning notes and sample selections </summary>
+<summary> Patterning notes and chords</summary>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Notation</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Notes</code></td>
+      <td>Divides the cycle or subdivisions when nested 
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+
+  <!--
+setcpm (80 / 4)
+$chromatic: note("c4 df4 d4 ef4 e4 f4 gf4 g4 af4 a4 bf4 b4 c5")
+  .sound("sawtooth")
+  .lpf(saw.range(3000, 400))
+  .lpq(14)
+
+$chromatic2: note("c4 cs4 d4 ds4 e4 f4 fs4 g4 gs4 a4 as4 b4 c5")
+  .sound("vibraphone")
+  .dec(0.3)
+
+$chromatic3: note("60 61 62 63 64 65 66 67 68 69 70 71 72").sound("piano")
+// or $chromatic3: note("60 .. 72")
+$chromatic4: note("72 71 70 69 68 67 66 65 64 63 62 61 60").sound("piano")
+ 
+all(fast("<2 3 5 7>"))
+-->
+</strudel-editor>
+</td>
+</tr>
+
+
+<tr>
+      <td><code> , </code></td>
+      <td>Divides the cycle or subdivisions when nested 
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+
+  <!--
+setcpm (80 / 4)
+note( "[60.5, 60, 64, 67.25, 67, 71]" )
+  .adsr("0.1:0.1:0.8:0.9")
+  .legato(0.1)
+  .sound("gm_accordion")
+  .vib(7)
+  .vibmod(0.3)
+-->
+</strudel-editor>
+</td>
+</tr>
+</tbody>
+</table>
+   
+
+<p> Try to create a pattern that represents this measure of Chopin's Prelude Op. 28, No. 7. </p>
+
+<img src="/assets/images/chopin.png" alt="Chopin" />
+<details>
+<summary> Answer </summary>
+<script src="https://unpkg.com/@strudel/repl@latest"></script>
+<strudel-editor>
+  <!--
+setcpm(60/3)
+
+$treble: note(`
+  [ [cs5@3 d5] [b4, g4, d4] [b4, g4, d4] ]@3
+  [ [b4, g4, d4]@2 [fs5, d5] ]@3
+  `).s("square").adsr("0.1:0.2:0.4:0.3"
+
+$bass: note(`
+[ e2 [e3, e2] [e3, e2] ]@3
+[ [e3, e2]@2 ~]@3
+`).sound("piano")
+
+-->
+</strudel-editor>
+</details>
 
 <p> Again from John Fielder's blog, this time with melody. This is much gnarlier in Strudel due to the shifting meter. </p>
 
