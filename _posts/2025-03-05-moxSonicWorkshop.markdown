@@ -189,7 +189,14 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 </p>
 </details>
 
+<!-- Beginning Rhythm-->
 <!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+
 
  <!-- <li> Tempo and Rhythm in Strudel
     <ul>
@@ -215,7 +222,6 @@ sound("bd")
 
 <p> This indicates that the sound called bd should be called once a cycle, at the beginning of the cycle. Let's add another item to the pattern. </p>
 
- <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm (140 / 4)
@@ -247,7 +253,6 @@ sound("bd sd")
     <tr>
       <td><code>[ ]</code></td>
       <td>Divides the cycle or subdivisions when nested 
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
  <!--
@@ -266,7 +271,6 @@ sound("[ bd sd hh ] [hh hh]")
     <tr>
       <td><code>.</code></td>
       <td>Divides the cycle but cannot be nested 
-      <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
  <!--
@@ -282,15 +286,10 @@ sound("bd sd . hh . hh . hh")
   </tbody>
 </table>
 
-
-
-<script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
 // A simple example of how a cycle can be divided in strudel
-
 setcpm (110 / 4)
-
 $wordUp: sound("[bd hh] [rim bd] [hh hh] [rim -]")
     ._pianoroll({labels: 1})
 // or
@@ -299,7 +298,6 @@ $wordUp2: sound("bd hh . rim bd . hh hh . rim ~")
 // or
 $wordUp3: sound("[bd hh] . [rim bd] . [hh hh] . [rim -]")
     ._pianoroll({labels: 1})
-
 -->
 
 </strudel-repl>
@@ -311,7 +309,6 @@ $wordUp3: sound("[bd hh] . [rim bd] . [hh hh] . [rim -]")
 <details> 
 <summary> Answer </summary> 
 
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm(60/4) 
@@ -329,8 +326,6 @@ $2: s("hh hh hh hh hh hh hh hh")
 
 <details> 
 <summary> Answer </summary> 
-
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm(60/4) 
@@ -346,6 +341,12 @@ $2: s("[hh hh hh hh hh hh hh hh hh hh hh hh]")
 </details>
 
 
+<!-- Intermediate Rhythm-->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
 <!-- ***************************************************** -->
 
 <details>
@@ -365,7 +366,6 @@ $2: s("[hh hh hh hh hh hh hh hh hh hh hh hh]")
   <tr>
       <td><code>!</code></td>
       <td>Replicate a pattern or part of a pattern
-     <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
  <!--
@@ -376,11 +376,9 @@ sound("bd!4")
 </td>
     </tr>
 
-
   <tr>
       <td><code>@</code></td>
       <td>Elongates a pattern or part of a pattern
-     <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
  <!--
@@ -396,10 +394,8 @@ sound("bd sd@2 hh")
     <tr>
       <td><code>&lt; &gt;</code></td>
       <td>Alternates cycles
-      
-       <script src="https://unpkg.com/@strudel/repl@latest"></script>
-<strudel-editor>
 
+<strudel-editor>
  <!--
 setcpm (140 / 4)
 sound("<bd sd>")
@@ -413,7 +409,6 @@ sound("<bd sd>")
       <td><code>{ }</code></td>
       <td>Indicates polymeter
 
-  <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
  <!--
@@ -435,16 +430,12 @@ sound(" { bd sd", "hh hh hh } ")
 
 <details> 
 <summary> Answer </summary> 
-
- <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm(60/4) 
-
 $1: s(`
       [ [cp] [~ cp cp] [cp@2 cp] [] ]  
   `) 
-
 $2: s("[hh!4]")
 -->
 </strudel-editor>
@@ -456,8 +447,6 @@ $2: s("[hh!4]")
 
 <details> 
 <summary> Answer </summary>
-
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm(60/4) 
@@ -477,8 +466,6 @@ $2: s("<[hh!4] [hh!4]>")
 
 <details> 
 <summary> Answer </summary> 
-
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm(60/4) 
@@ -499,6 +486,12 @@ $2: s("<[hh!4] [hh!4]>")
 </details>
 
 
+<!-- Advanced Rhythm-->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
 <!-- ***************************************************** -->
 
 <details>
@@ -516,7 +509,6 @@ $2: s("<[hh!4] [hh!4]>")
 <tr>
   <td><code>*</code></td>
     <td>Speed up a pattern or part of a pattern
-    <script src="https://unpkg.com/@strudel/repl@latest"></script>
   <strudel-editor>
 
  <!--
@@ -530,7 +522,6 @@ sound("[ bd sd bd sd]*8 [bd*4 sd bd sd]")
 <tr>
   <td><code>/</code></td>
     <td>Slow down a pattern or part of a pattern
-    <script src="https://unpkg.com/@strudel/repl@latest"></script>
   <strudel-editor>
  <!--
 setcpm (140 / 4)
@@ -552,7 +543,6 @@ sound("[ bd]/2 [sd]/3") // here the pattern is extended to 2X the cycle length
 <p> With an offset of 1, the pattern would look like this: </p>
 <p> - X - - X - - X </p>
 
- <script src="https://unpkg.com/@strudel/repl@latest"></script>
   <strudel-editor>
   <!--
 // "Common West African bell v240624" @by Prince Lucija
@@ -597,7 +587,6 @@ The following notation is taken from John Fielder's blog post on nested tuplets.
 <img src="http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg" alt="John Fielder credit" />
 <p> </p>
 
- <script src="https://unpkg.com/@strudel/repl@latest"></script>
   <strudel-editor>
   <!--
 // How can we explore this exercise using Strudel's rhythmic notation?
@@ -611,12 +600,18 @@ stack(hh, bd)
 </strudel-editor>
 
 </details>
+
+<!-- Patterning Notes and Chords -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
+<!-- ***************************************************** -->
 <!-- ***************************************************** -->
 
 
 <details>
 <summary> Patterning notes and chords</summary>
-
 
 <table>
   <thead>
@@ -629,7 +624,6 @@ stack(hh, bd)
     <tr>
       <td><code>Notes</code></td>
       <td>Divides the cycle or subdivisions when nested 
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
   <!--
@@ -657,7 +651,6 @@ all(fast("<2 3 5 7>"))
 <tr>
       <td><code> , </code></td>
       <td>Divides the cycle or subdivisions when nested 
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
 
   <!--
@@ -681,7 +674,6 @@ note( "[60.5, 60, 64, 67.25, 67, 71]" )
 <img src="/assets/images/chopin.png" alt="Chopin" />
 <details>
 <summary> Answer </summary>
-<script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
   <!--
 setcpm(60/3)
@@ -708,7 +700,6 @@ $bass: note(`
 </div>
 <p> </p>
 
-<script src="/assets/embed.js"></script>
 <strudel-repl>
   <!--
 setcpm (110 / 5)
@@ -731,6 +722,91 @@ stack(melody, tick)
 </strudel-repl>
 
 </details>
+
+<details>
+<summary> Working with longer samples </summary>
+
+<table>
+  <thead>
+    <tr>
+      <th>Notation</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td><code> fit </code></td>
+    <td> fit a sample into a single cycle
+  <strudel-editor>
+
+ <!--
+samples('https://raw.githubusercontent.com/tidalcycles/Dirt-Samples/master/strudel.json')
+s("breaks125").fit()
+-->
+  </strudel-editor>
+  </td>
+</tr>
+
+<tr>
+  <td><code>/</code></td>
+    <td>Slow down a pattern or part of a pattern
+  <strudel-editor>
+ <!--
+setcpm (140 / 4)
+sound("[ bd]/2 [sd]/3") // here the pattern is extended to 2X the cycle length
+-->
+  </strudel-editor>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<strudel-repl>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+$1: s("breaks125")
+// This break beat, which is indicated to be at a tempo of 125 is in 4/4
+// The above cpm adds an extra beat to the cycle 
+
+// We can make the break beat slow down to meet this tempo
+// $1: s("breaks125").fit()
+
+// We can make the break beat slow down to fit within x number of cycles
+// $1: s("breaks125").loopAt(2)
+
+// Let's slice the break into eight parts and play them back in order
+// This allows us to fit the breakbeat into the cycle without pitch shifting
+// s("breaks125").chop(32)
+
+// Let's change the order that the slices are played back
+// $1: s("breaks125").slice(8, "7 .. 0")
+
+// We can also use the splice function 
+// This changes the playback speed of each slice according to its duration
+// $1: s("breaks125").splice(8, "[ [0 1 2@2 ] [ 3 4 5 6 [7 7 7] ] ]")
+
+// striate allows us to lace together patterns
+// it cuts samples into x number of parts and then plays back portions in sequence
+
+/*
+s("breaks125:0 breaks125:1 breaks125:2")
+  .striate(4)
+  .slow(1)
+  .cut(1)
+  .begin("<0.0 0.01>")
+  .end(0.5)
+  .every(4, x=>x.lpf(saw.range(100, 3000).slow(1)))
+*/
+
+// Here we use the loop function in conjunction with loopBegin and loopEnd 
+// s("breaks125").fit().loopBegin("0").loopEnd("<0.5@2 0.75>").loop(1).cut(1).struct("<x x x>")
+
+-->
+</strudel-repl>
+
+
+<!--  slice; splice; striate; chop; fit; loopBegin and loopEnd vs begin and end, loop, loopAt, speed 
 
 <!-- <p> In computer music, Music-N languages gravitated toward a separate orchestra and score. The synthesis engine was separate from score-level event generation. Early analog electronic instruments make the distinction as well, providing sequenced control voltages to control parameters of audio rate modules, such as an oscillator. This paradigm was challenged by SuperCollider, a child of the Music-N lineage, by making no distinction between composition on the sample level and composition on longer time scales. </p> -->
 
