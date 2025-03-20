@@ -210,7 +210,10 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 <summary> Tempo and Rhythm in Strudel - Thinking in Cycles (Basic) </summary>
 <p>
 
-<p> Strudel's syntax can be boiled down to two things: Functions and Patterns. Below a function named sound is used. The function expects to receive a pattern as its argument Patterns are expressed in quotation marks or backticks (useful for writing patterns across multiple lines). </p>
+<img src="https://strudel.cc/img/drumset.png" alt="Drumset Image" />
+-- Image from strudel.cc
+
+<p> To begin, we need to provide two things: a function and a pattern. Below a function named "sound" is used. The function requires a pattern.  Patterns are expressed in quotation marks or backticks (useful for writing patterns across multiple lines). </p>
 
  <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
@@ -229,7 +232,10 @@ sound("bd sd")
 -->
 </strudel-editor>
 
-<p>Now the cycle is split in two and the elements of the pattern bd and sd are played at those divisions. Let's experiment a bit with making rhythms with only this much information</p>
+
+<p>Now the cycle is split in two and the elements of the pattern bd and sd are played at those divisions. Let's experiment a bit with making rhythms with only this much information. </p>
+
+<p> CLick the Strudel REPL Spiral below. Try chaining the "bank" function to end of sound .bank("RolandTR808"). See the side panel under sounds and then drum-machines.  </p>
 
 <script src="/assets/embed.js"></script>
 <strudel-repl>
@@ -285,22 +291,6 @@ sound("bd sd . hh . hh . hh")
     </tr>
   </tbody>
 </table>
-
-<strudel-repl>
-  <!--
-// A simple example of how a cycle can be divided in strudel
-setcpm (110 / 4)
-$wordUp: sound("[bd hh] [rim bd] [hh hh] [rim -]")
-    ._pianoroll({labels: 1})
-// or
-$wordUp2: sound("bd hh . rim bd . hh hh . rim ~")
-     ._pianoroll({labels: 1})
-// or
-$wordUp3: sound("[bd hh] . [rim bd] . [hh hh] . [rim -]")
-    ._pianoroll({labels: 1})
--->
-
-</strudel-repl>
 
 <p> Let's take some time to try our hand at a few rhythmic exercises. </p>
 
@@ -434,7 +424,7 @@ sound(" { bd sd", "hh hh hh } ")
   <!--
 setcpm(60/4) 
 $1: s(`
-      [ [cp] [~ cp cp] [cp@2 cp] [] ]  
+      [ [cp] [~ cp cp] [cp@2 cp] [cp] ]  
   `) 
 $2: s("[hh!4]")
 -->
@@ -622,8 +612,8 @@ stack(hh, bd)
   </thead>
   <tbody>
     <tr>
-      <td><code>Notes</code></td>
-      <td>Divides the cycle or subdivisions when nested 
+      <td><code>note</code></td>
+      <td> play a note by name or MIDI note number
 <strudel-editor>
 
   <!--
