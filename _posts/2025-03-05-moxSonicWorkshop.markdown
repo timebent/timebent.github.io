@@ -5,7 +5,7 @@ subtitle: live coding
 date:   2025-03-05 16:56:52 -0400
 categories: live_coding
 tags: live_coding
-image: /assets/images/algorave.png
+image: /assets/images/MOXsonic-LOGO.png
 ---
 
 <h2>
@@ -613,7 +613,7 @@ stack(hh, bd)
   <tbody>
     <tr>
       <td><code>note</code></td>
-      <td> play a note by name or MIDI note number
+      <td> Play a note by name or MIDI note number
 <strudel-editor>
 
   <!--
@@ -640,7 +640,7 @@ all(fast("<2 3 5 7>"))
 
 <tr>
       <td><code> , </code></td>
-      <td>Divides the cycle or subdivisions when nested 
+      <td>Stack patterns together 
 <strudel-editor>
 
   <!--
