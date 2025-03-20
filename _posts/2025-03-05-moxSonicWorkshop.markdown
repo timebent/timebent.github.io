@@ -128,7 +128,7 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 
   <tr>
       <td><strong>SuperCollider</strong></td>
-      <td>❌ No, not natively</td>
+      <td>⚠️ Not natively. </td>
       <td>❌and✅ SuperCollider is relatively easy to install, but you won't be live coding right out of the gate</td>
       <td>❌ (Steep learning curve, SuperCollider specific language and not singularly focused on live coding)</td>
       <td>⚠️ (Extensive but complex)</td>
@@ -186,7 +186,6 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
   </tbody>
 </table>
 
-</p>
 </details>
 
 <!-- Beginning Rhythm-->
@@ -198,19 +197,20 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 <!-- ***************************************************** -->
 
 
- <!-- <li> Tempo and Rhythm in Strudel
+<!-- <li> Tempo and Rhythm in Strudel
     <ul>
     <li> - Thinking in cycles </li>
     <li> - Functions and Patterns Syntax  </li>
     <li> - Euclidean Rhythms </li> 
     </ul>
-  </li> -->
+  </li> 
+-->
 
 <details>
 <summary> Tempo and Rhythm in Strudel - Thinking in Cycles (Basic) </summary>
 <p>
 
-<p> Strudel's syntax can be boiled down to two things: Functions and Patterns. Below a function named sound is used. The function expects to receive a pattern as its argument Patterns are expressed in quotation marks or backticks (useful for writing patterns acroos multiple lines). </p>
+<p> Strudel's syntax can be boiled down to two things: Functions and Patterns. Below a function named sound is used. The function expects to receive a pattern as its argument Patterns are expressed in quotation marks or backticks (useful for writing patterns across multiple lines). </p>
 
  <script src="https://unpkg.com/@strudel/repl@latest"></script>
 <strudel-editor>
@@ -368,7 +368,7 @@ $2: s("[hh hh hh hh hh hh hh hh hh hh hh hh]")
       <td>Replicate a pattern or part of a pattern
 <strudel-editor>
 
- <!--
+<!--
 setcpm (140 / 4)
 sound("bd!4")
 -->
@@ -675,19 +675,18 @@ note( "[60.5, 60, 64, 67.25, 67, 71]" )
 <details>
 <summary> Answer </summary>
 <strudel-editor>
-  <!--
+<!--
 setcpm(60/3)
 
 $treble: note(`
   [ [cs5@3 d5] [b4, g4, d4] [b4, g4, d4] ]@3
   [ [b4, g4, d4]@2 [fs5, d5] ]@3
-  `).s("square").adsr("0.1:0.2:0.4:0.3"
+  `).s("square").adsr("0.1:0.2:0.4:0.3")
 
 $bass: note(`
 [ e2 [e3, e2] [e3, e2] ]@3
 [ [e3, e2]@2 ~]@3
 `).sound("piano")
-
 -->
 </strudel-editor>
 </details>
@@ -737,13 +736,13 @@ stack(melody, tick)
 <tr>
   <td><code> fit </code></td>
     <td> fit a sample into a single cycle
-  <strudel-editor>
-
+<strudel-editor>
  <!--
 samples('https://raw.githubusercontent.com/tidalcycles/Dirt-Samples/master/strudel.json')
 s("breaks125").fit()
 -->
-  </strudel-editor>
+</strudel-editor>
+  
   </td>
 </tr>
 
@@ -761,35 +760,71 @@ sound("[ bd]/2 [sd]/3") // here the pattern is extended to 2X the cycle length
 </tbody>
 </table>
 
-<strudel-repl>
+
+<strudel-editor>
 <!--
 setcpm(125/5)
 samples('github:tidalcycles/dirt-samples')
 $1: s("breaks125")
-// This break beat, which is indicated to be at a tempo of 125 is in 4/4
-// The above cpm adds an extra beat to the cycle 
+-->
+</strudel-editor>
 
-// We can make the break beat slow down to meet this tempo
-// $1: s("breaks125").fit()
+<p> This break beat, which is indicated to be at a tempo of 125 is in 4/4.
+The above cpm adds an extra beat to the cycle. We can make the break beat slow down to meet this tempo </p>
 
-// We can make the break beat slow down to fit within x number of cycles
-// $1: s("breaks125").loopAt(2)
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+s("breaks125").fit()
+-->
+</strudel-editor>
 
-// Let's slice the break into eight parts and play them back in order
-// This allows us to fit the breakbeat into the cycle without pitch shifting
-// s("breaks125").chop(32)
+<p> We can make the break beat slow down to fit within x number of cycles </p>
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+$1: s("breaks125").loopAt(2)
+-->
+</strudel-editor>
 
-// Let's change the order that the slices are played back
-// $1: s("breaks125").slice(8, "7 .. 0")
+<p> Let's slice the break into eight parts and play them back in order. This allows us to fit the breakbeat into the cycle without pitch shifting </p>
 
-// We can also use the splice function 
-// This changes the playback speed of each slice according to its duration
-// $1: s("breaks125").splice(8, "[ [0 1 2@2 ] [ 3 4 5 6 [7 7 7] ] ]")
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+s("breaks125").chop(32)
+-->
+</strudel-editor>
 
-// striate allows us to lace together patterns
-// it cuts samples into x number of parts and then plays back portions in sequence
+<p> Let's change the order in which the slices are played back </p>
 
-/*
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+$1: s("breaks125").slice(8, "7 .. 0")
+-->
+</strudel-editor>
+
+<p> We can also use the splice function. This changes the playback speed of each slice according to its duration </p>
+
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+$1: s("breaks125").splice(8, "[ [0 1 2@2 ] [ 3 4 5 6 [7 7 7] ] ]")
+-->
+</strudel-editor>
+
+<p> The striate function allows us to lace together patterns. It cuts samples into x number of parts and then plays back portions in sequence. </p>
+
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
 s("breaks125:0 breaks125:1 breaks125:2")
   .striate(4)
   .slow(1)
@@ -797,16 +832,25 @@ s("breaks125:0 breaks125:1 breaks125:2")
   .begin("<0.0 0.01>")
   .end(0.5)
   .every(4, x=>x.lpf(saw.range(100, 3000).slow(1)))
-*/
-
-// Here we use the loop function in conjunction with loopBegin and loopEnd 
-// s("breaks125").fit().loopBegin("0").loopEnd("<0.5@2 0.75>").loop(1).cut(1).struct("<x x x>")
-
 -->
-</strudel-repl>
+</strudel-editor>
 
+<p> Here we use the loop function in conjunction with loopBegin and loopEnd  </p>
 
-<!--  slice; splice; striate; chop; fit; loopBegin and loopEnd vs begin and end, loop, loopAt, speed 
+<strudel-editor>
+<!--
+setcpm(125/5)
+samples('github:tidalcycles/dirt-samples')
+s("breaks125").fit().loopBegin("0")
+  .loopEnd("<0.5@2 0.75>")
+  .loop(1)
+  .cut(1)
+  .struct("<x x x>")
+-->
+</strudel-editor>
+
+</details>
+
 
 <!-- <p> In computer music, Music-N languages gravitated toward a separate orchestra and score. The synthesis engine was separate from score-level event generation. Early analog electronic instruments make the distinction as well, providing sequenced control voltages to control parameters of audio rate modules, such as an oscillator. This paradigm was challenged by SuperCollider, a child of the Music-N lineage, by making no distinction between composition on the sample level and composition on longer time scales. </p> -->
 
