@@ -225,6 +225,7 @@ sound("bd")
 
 <p> This indicates that the sound called bd should be called once a cycle, at the beginning of the cycle. Let's add another item to the pattern. </p>
 
+
 <strudel-editor>
   <!--
 setcpm (140 / 4)
@@ -404,7 +405,7 @@ sound("<bd sd>")
 setcpm (140 / 4)
 // Polymeter is where two patterns with different bar lengths play at the same tempo 
 // Polymeter 
-sound(" { bd sd", "hh hh hh } ") 
+sound(" { bd sd, hh hh hh } ") 
 // Polyrhythm
 // sound("bd sd", "hh hh hh")
 -->
