@@ -405,9 +405,9 @@ sound("<bd sd>")
 setcpm (140 / 4)
 // Polymeter is where two patterns with different bar lengths play at the same tempo 
 // Polymeter 
-sound(" { bd sd, hh hh hh } ") 
+sound(" { bd sd, hh cp hh } ") 
 // Polyrhythm
-// sound("bd sd", "hh hh hh")
+// sound("[bd sd], [hh cp hh]")
 -->
 </strudel-editor>
       </td>
@@ -655,8 +655,24 @@ note( "[60.5, 60, 64, 67.25, 67, 71]" )
 </strudel-editor>
 </td>
 </tr>
+
+<tr>
+<td> <code> scale </code> </td>
+      <td>Use a musical scale
+      <strudel-editor>
+<!--
+setcpm (80 / 4)
+$scale: n(run(5)).scale("C:pentatonic")
+// List of scales available here:
+// https://github.com/tonaljs/tonal/blob/main/packages/scale-type/data.ts
+-->
+</strudel-editor>
+</td>
+</tr>
 </tbody>
 </table>
+
+
    
 
 <p> Try to create a pattern that represents this measure of Chopin's Prelude Op. 28, No. 7. </p>
