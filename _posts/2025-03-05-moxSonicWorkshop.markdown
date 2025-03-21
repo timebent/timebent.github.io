@@ -275,10 +275,9 @@ sound("[ bd sd hh ] [hh hh]")
 </td>
     </tr>
     <tr>
-      <td><code>.</code></td>
+      <td><code> . </code></td>
       <td>Divides the cycle but cannot be nested 
 <strudel-editor>
-
  <!--
 setcpm (140 / 4)
 // These are akin to the [ ] notation, but these cannot be nested.
