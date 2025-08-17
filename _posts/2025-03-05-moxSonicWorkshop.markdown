@@ -798,7 +798,7 @@ $1: s("breaks125").loopAt(2)
 <!--
 setcpm(125/5)
 samples('github:tidalcycles/dirt-samples')
-s("breaks125").chop(32)
+s("breaks125").chop(8)
 -->
 </strudel-editor>
 
