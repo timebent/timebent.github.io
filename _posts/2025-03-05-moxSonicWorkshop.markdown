@@ -243,7 +243,7 @@ sound("bd sd")
 
  <!--
 setcpm (140 / 4)
-sound("bd sd")
+sound("bd sd")._spiral()
 -->
 </strudel-repl>
  
@@ -264,7 +264,7 @@ sound("bd sd")
 
  <!--
 setcpm (140 / 4)
-sound("[ bd sd hh ] [hh hh]") 
+sound("[ bd sd hh ] [hh hh]")._spiral()
 // The two enclosures [] and [] divide the cycle into 2. The elements within the enclosures then further divide that part of the cycles into 3 parts and 2 parts respectively. Compare: 
 // sound("[ bd sd hh ] [hh hh]") 
 // and 
@@ -320,7 +320,7 @@ $2: s("hh hh hh hh hh hh hh hh")
   <!--
 setcpm(60/4) 
 
-$1: s(` [ [cp cp cp] [cp cp cp] [cp] [cp] ] `) 
+$1: s("[ [cp cp cp] [cp cp cp] [cp] [cp] ]") 
 $2: s("[hh hh hh hh hh hh hh hh hh hh hh hh]")
 -->
 </strudel-editor>
@@ -672,9 +672,6 @@ $scale: n(run(5)).scale("C:pentatonic")
 </tbody>
 </table>
 
-
-   
-
 <p> Try to create a pattern that represents this measure of Chopin's Prelude Op. 28, No. 7. </p>
 
 <img src="/assets/images/chopin.png" alt="Chopin" />
@@ -685,8 +682,8 @@ $scale: n(run(5)).scale("C:pentatonic")
 setcpm(60/3)
 
 $treble: note(`
-  [ [cs5@3 d5] [b4, g4, d4] [b4, g4, d4] ]@3
-  [ [b4, g4, d4]@2 [fs5, d5] ]@3
+  [ [cs5@3 d5] [b4, gs4, d4] [b4, gs4, d4] ]@3
+  [ [b4, gs4, d4]@2 [fs5, d5] ]@3
   `).s("square").adsr("0.1:0.2:0.4:0.3")
 
 $bass: note(`
