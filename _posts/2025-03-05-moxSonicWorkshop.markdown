@@ -681,12 +681,16 @@ $scale: n(run(5)).scale("C:pentatonic")
 <!--
 setcpm(60/3)
 
+setcpm(60/3)
+
 $treble: note(`
+  [ [~] [~] [e4] ]@3
   [ [cs5@3 d5] [b4, gs4, d4] [b4, gs4, d4] ]@3
   [ [b4, gs4, d4]@2 [fs5, d5] ]@3
   `).s("square").adsr("0.1:0.2:0.4:0.3")
 
 $bass: note(`
+[ [~] [~] [e4] ]@3
 [ e2 [e3, e2] [e3, e2] ]@3
 [ [e3, e2]@2 ~]@3
 `).sound("piano")
