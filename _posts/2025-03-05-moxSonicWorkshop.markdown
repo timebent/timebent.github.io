@@ -575,9 +575,8 @@ The following notation is taken from John Fielder's blog post on nested tuplets.
 (http://klangnewmusic.weebly.com/direct-sound/lets-talk-rhythm-part-2-nested-tuplets) </p>
 
 <img src="http://klangnewmusic.weebly.com/uploads/1/2/3/0/12308331/1727048_orig.jpg" alt="John Fielder credit" />
-<p> </p>
 
-  <strudel-editor>
+<strudel-editor>
   <!--
 // How can we explore this exercise using Strudel's rhythmic notation?
 setcpm (40/4)
