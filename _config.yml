@@ -22,10 +22,67 @@ title: John Thompson - Music
 email: johnattimebent@ [gmail] [com]
 ## description: >- # this means to ignore newlines until "baseurl:"
   ## John Thompson - Composer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: "Electronic music composer, live coder, and audiovisual performer. Tutorials on Strudel"
+url: "https://timebent.github.io"
+baseurl: ""
 #twitter_username: jekyllrb
 #github_username:  timebent
+
+# Author information
+author:
+  name: "John Thompson"
+  email: "johnattimebent@gmail.com"
+  bio: "Experimental music composer specializing in live coding, electronic instruments, and audiovisual performance."
+
+# SEO plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+  # Social profiles for rich snippets
+social:
+  name: "John Thompson"
+  links:
+    - https://github.com/timebent
+    - https://timebent.github.io
+
+    # Site settings
+lang: en_US
+timezone: America/New_York
+
+# Collections for better organization
+collections:
+  compositions:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+  instruments:
+    output: true
+    permalink: /:collection/:name/
+
+    # SEO defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "John Thompson"
+  - scope:
+      path: ""
+      type: "compositions"
+    values:
+      layout: "composition"
+      author: "John Thompson"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+      author: "John Thompson"
 
 # Build settings
 theme: minima
@@ -36,6 +93,19 @@ plugins:
   - jekyll-remote-theme
 
 show_excerpts: true
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # markdown: kramdown
 
