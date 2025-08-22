@@ -215,7 +215,7 @@ https://www.youtube.com/watch?v=sMfLMXDw_eM </p>
 
 <p> To begin, we need to provide two things: a function and a pattern. Below a function named "sound" is used. The function requires a pattern.  Patterns are expressed in quotation marks or backticks (useful for writing patterns across multiple lines). </p>
 
- <script src="https://unpkg.com/@strudel/repl@latest"></script>
+<script src="https://unpkg.com/@strudel/repl@1.0.2"></script>
 <strudel-editor>
   <!--
 setcpm (140 / 4)
