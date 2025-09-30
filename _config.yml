@@ -28,12 +28,6 @@ baseurl: ""
 #twitter_username: jekyllrb
 #github_username:  timebent
 
-# Author information
-author:
-  name: "John Thompson"
-  email: "johnattimebent@gmail.com"
-  bio: "Experimental music composer specializing in live coding, electronic instruments, and audiovisual performance."
-
 # SEO plugins
 plugins:
   - jekyll-seo-tag
