@@ -2,7 +2,7 @@
 layout: post
 title:  "The changing light (violin)"
 subtitle: Adrianne Munden-Dixon, violin
-date:   2023-03-23 16:56:52 -0400
+date:   2024-04-20 16:56:52 -0400
 categories: instrument-and-electronics
 tags: instrument-and-electronics
 image: /assets/images/changinglight.png
