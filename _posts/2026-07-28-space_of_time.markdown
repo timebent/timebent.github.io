@@ -8,8 +8,6 @@ tags: instrument-and-electronics
 image: /assets/images/galan.png
 ---
 
-Space of time is a work for 5 instruments and 8-channel live electronics. It was written for the Galan Trio (violin, cello, piano) with guest performers on double bass and percussion.
-
 
 # Space of Time
 *Galan Trio with Guests* <br>
